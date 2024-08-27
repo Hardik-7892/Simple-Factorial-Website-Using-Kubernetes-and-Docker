@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: factorial-app-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: factorial-app
+  template:
+    metadata:
+      labels:
+        app: factorial-app
+    spec:
+      containers:
+      - name: factorial-app
+        image: gcr.io/GCP_PROJECT_ID/factorial-app
+        ports:
+        - containerPort: 8080
