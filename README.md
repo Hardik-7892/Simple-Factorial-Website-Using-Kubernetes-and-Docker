@@ -6,12 +6,13 @@ Reference example
 http://34.69.43.90/factorial?number=8
 
 
-while trying to copy this project, make sure to edit the deployment.yaml file
+while trying to copy this project, make sure to edit the deployment.yaml file, your docker build and push command should change accordingly.
 
 Sample Build process (Using Google Cloud):
 1. setup billing and enable API
    - Kubernetes Engine API
-   - one more i forgot just continue with the commands   #cloud shell will tell you the API required when the time is right, re run the command after enabling required API
+   - Container Registry API
+   - Artifact Registry API
 2. Open cloud shell
 3. add files, either via upload, or create using your favourite editor (mine is nano)
 4. Create Docker image
